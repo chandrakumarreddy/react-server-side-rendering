@@ -1,0 +1,47 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon --watch build --exec node build/bundle.js",
+    "dev:build-client": "webpack --config webpack.client.js --watch",
+    "dev:build-server": "webpack --config webpack.server.js --watch"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1",
+    "morgan": "^1.9.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^7.0.2",
+    "react-router-config": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "serialize-javascript": "^1.7.0",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "live-server": "^1.2.1",
+    "nodemon": "^1.18.11",
+    "npm-run-all": "^4.1.5",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
